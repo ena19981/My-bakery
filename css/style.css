@@ -1,149 +1,275 @@
-/* poppins-300 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
 }
 
-/* poppins-regular - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
 }
 
-/* poppins-600 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
 }
 
-/* poppins-900 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
 }
-:root{
-    --color-primery-dark: #31261A;
-    --color-primery-light: #FAF4EA;
-    --color-brand-light: #819B57;
-    --color-brand-dark: #465929;
+:root {
+  --color-primery-dark: #31261a;
+  --color-primery-light: #faf4ea;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
 }
-body{
-    color: var(--color-primery-dark);
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
+* {
+  box-sizing: border-box;
 }
-ul{
-    list-style-type: none;
+
+body {
+  color: var(--color-primery-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
 }
-a{
-    text-decoration: none;
-        color: #666;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-address{
-    text-decoration: none;
-        font-style: normal;
+/* li {
+  display: inline-block;
+  padding: 0 32px;
+} */
+a {
+  text-decoration: none;
+  color: #666;
 }
-.button{
-    color: var(--color-primery-light);
-    font-weight: 600;
-    border: 2px solid var(--color-brand-light);
-    background-color: var(--color-brand-light);
-    border-radius: 8px;
-    cursor: pointer;
+address {
+  text-decoration: none;
+  font-style: normal;
+}
+h1 h2 h3 h4 h5 h6 p {
+  margin-top: 0;
+}
+header {
+  margin-top: 34px;
+}
+.container {
+  width: 100%;
+  max-width: 1488px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+.traditions-section {
+  padding-top: 96px;
+}
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-contant {
+  max-width: 710px;
+}
+.traditions-title {
+  margin-bottom: 42px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.button {
+  padding: 16px 32px;
+  color: var(--color-primery-light);
+  font-weight: 600;
+  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-brand-light);
+  border-radius: 8px;
+  cursor: pointer;
 }
 .button:hover {
-    color: var(--color-brand-dark);
-    background-color: transparent;
+  color: var(--color-brand-dark);
+  background-color: transparent;
 }
 
-.link{
-color: var(--color-primery-light);
+.link {
+  color: var(--color-primery-light);
 }
-.link:hover{
-color: var(--color-brand-light);
-font-weight: 600;
+.link:hover {
+  color: var(--color-brand-light);
+  font-weight: 600;
 }
-.hero-titel{
-    color: var(--color-primery-light);
-    text-align: center;
-    font-size: 128px;
-    font-weight: 900;
+.hero-saction {
+  padding: 272px 0;
 }
-.accent{
-    color: var(--color-brand-light);
+.hero-titel {
+  margin-bottom: 0;
+  color: var(--color-primery-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
+  margin: 0 auto;
 }
-.accent-dark{
-    color: var(--color-brand-dark);
+.accent {
+  color: var(--color-brand-light);
 }
-.advantages-list{
-    color: var(--color-primery-light);
-    background: var(--color-brand-light);
-        backdrop-filter: blur(2px);
+.accent-dark {
+  color: var(--color-brand-dark);
 }
-.advantages-item{
-    font-size: 20px;
-    font-weight: 300;
+
+.advantages-saction {
+  padding: 16px 0;
+  background: var(--color-brand-light);
 }
-.section-title{
-    color: var(--color-primery-dark);
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 1.3;
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
-.shief-titel{
-    font-size: 40px;
-    font-weight: 600
+.advantages-item {
+  color: var(--color-primery-light);
+  backdrop-filter: blur(2px);
+  font-size: 20px;
+  font-weight: 300;
 }
-.form-titel{
-    font-size: 24px;
-    font-weight: 600;
+
+.section-title {
+  text-align: center;
+  color: var(--color-primery-dark);
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin: 0 auto;
 }
-.form-text{
-    font-size: 14px;
-        font-weight: 300;
+.shiefs-titel {
+  margin-bottom: 80px;
 }
+.shief-titel {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.shief-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.forms-titel {
+  margin-bottom: 80px;
+}
+.form-titel {
+  font-size: 24px;
+  font-weight: 600;
+}
+.form-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+.contact-title {
+  margin-bottom: 16px;
+  color: var(--color-primery-dark);
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin: 0 auto;
+}
+.contact-menu {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.contact-item {
+  text-align: left;
+}
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+.format-card {
+  border: 1px solid lightgray; /* remove */
+  border-radius: 16px;
+  padding: 24px;
+}
+
 /* footer text */
-.address-link{
-    color: var(--color-primery-light);
-    
-    font-size: 16px;
-    font-weight: 300;
+.address-link {
+  color: var(--color-primery-light);
+  font-size: 16px;
+  font-weight: 300;
 }
-.address-link:hover{
-    color: var(--color-brand-dark);
+.address-link:hover {
+  color: var(--color-brand-dark);
 }
-.address-copyright{
-    color: #A18268;
-    font-size: 14px;
-    font-weight: 400;
-
+.address-copyright {
+  color: #a18268;
+  font-size: 14px;
+  font-weight: 400;
 }
-.text{
-    text-decoration: underline;
+.text {
+  text-decoration: underline;
 }
-.traditions-text span{
-    text-transform: uppercase;
-    font-weight: 600;
+.traditions-text span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.map {
+  flex-basis: 603px;
+  height: 595px;
+}
+.footer-titel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+.footer-item {
+  margin-top: 12px;
 }
