@@ -223,7 +223,27 @@ header {
   box-shadow: -16px 16px 0 0 var(--color-primery-light),
     -16px 16px 0 2px var(--color-secondary-dark);
 }
-
+.carousel-buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primery-dark);
+  cursor: pointer;
+}
+.carousel-buttom:hover {
+  background-color: var(--color-primery-dark);
+}
+.carousel-icon {
+  fill: var(--color-primery-dark);
+}
+.carousel-buttom:hover .carousel-icon {
+  fill: var(--color-primery-light);
+}
 .forms-titel {
   margin-bottom: 80px;
 }
@@ -283,7 +303,7 @@ header {
   font-weight: 300;
 }
 .address-link:hover {
-  color: var(--color-brand-dark);
+  color: var(--color-brand-normal);
 }
 .address-copyright {
   color: #a18268;
@@ -316,5 +336,22 @@ header {
   gap: 40px;
 }
 .footer-item {
-  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.address-icon {
+  fill: var(--color-primery-light);
+}
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+.address-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* margin: 0;
+  padding: 0; */
+}
+.flex-logo {
+  margin: 4px 22px;
+  margin-left: 0px;
 }
