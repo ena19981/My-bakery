@@ -212,10 +212,18 @@ header {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
+  margin-top: 0px;
+}
+.shief-text p {
+  margin-bottom: 24px;
+}
+.shief-text p:last-child {
+  margin-bottom: 0;
 }
 .shief-menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .shief-imeg {
@@ -223,10 +231,16 @@ header {
   box-shadow: -16px 16px 0 0 var(--color-primery-light),
     -16px 16px 0 2px var(--color-secondary-dark);
 }
+.carousel-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 .carousel-buttom {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -255,6 +269,9 @@ header {
   font-size: 14px;
   font-weight: 300;
 }
+.contact-section {
+  padding-bottom: 96px;
+}
 .contact-title {
   margin-bottom: 16px;
   color: var(--color-primery-dark);
@@ -265,8 +282,13 @@ header {
 }
 .contact-menu {
   display: flex;
-  gap: 40px;
+  gap: 32px;
   justify-content: space-between;
+}
+.map {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
 }
 .contact-item {
   text-align: left;
@@ -301,6 +323,7 @@ header {
   color: var(--color-primery-light);
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 12px;
 }
 .address-link:hover {
   color: var(--color-brand-normal);
@@ -317,10 +340,7 @@ header {
   text-transform: uppercase;
   font-weight: 600;
 }
-.map {
-  flex-basis: 603px;
-  height: 595px;
-}
+
 .footer {
   background-image: url('../icon/footer-fon.png');
   background-repeat: no-repeat;
@@ -336,6 +356,9 @@ header {
   gap: 40px;
 }
 .footer-item {
+  margin-bottom: 16px;
+}
+.footer-contact {
   margin-bottom: 12px;
 }
 .address-icon {
