@@ -142,7 +142,7 @@ header {
   color: var(--color-brand-normal);
   font-weight: 600;
 }
-.hero-saction {
+.hero-background {
   background-image: linear-gradient(
       103deg,
       rgba(18, 18, 17, 0.78) 2.03%,
@@ -153,7 +153,9 @@ header {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-
+  border: 1px solid black;
+}
+.hero-saction {
   padding: 272px 0;
 }
 .hero-titel {
