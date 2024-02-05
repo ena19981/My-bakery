@@ -200,6 +200,8 @@ header {
   text-align: center;
 }
 .shiefs-titel {
+  position: relative;
+  width: 538px;
   max-width: 900px;
   margin-bottom: 80px;
 }
@@ -209,6 +211,16 @@ header {
   width: 352px;
   border: 2px solid var(--color-brand-light);
   content: '';
+}
+.shief-before::before {
+  position: absolute;
+  left: -360px;
+  bottom: 24px;
+}
+.shief-before::after {
+  position: absolute;
+  right: -360px;
+  bottom: 24px;
 }
 .shief-titel {
   font-size: 40px;
@@ -256,6 +268,9 @@ header {
 }
 .carousel-icon {
   fill: var(--color-primery-dark);
+}
+.carousel-icon .transform {
+  transform: scaleX(-1);
 }
 .carousel-buttom:hover .carousel-icon {
   fill: var(--color-primery-light);
@@ -350,6 +365,8 @@ header {
   background-size: cover;
   background-color: var(--color-primery-dark);
   padding: 32px 0;
+  position: relative;
+  overflow: hidden;
 }
 .footer-titel {
   display: flex;
@@ -379,4 +396,56 @@ header {
 .flex-logo {
   margin: 4px 22px;
   margin-left: 0px;
+}
+.footer::before {
+  position: absolute;
+  background-image: url('../icon/decor-bread-big.png');
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 342px;
+  background-size: 100%;
+  left: -44px;
+  top: 150px;
+  content: '';
+}
+.footer::after {
+  position: absolute;
+  background-image: url('../icon/decor-bread-smoll.png');
+  background-repeat: no-repeat;
+  width: 305px;
+  height: 330px;
+  background-size: 100%;
+  top: 114px;
+  right: 110px;
+  content: '';
+}
+
+/* MODAL */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primery-light);
+  border-radius: 32px;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
