@@ -185,35 +185,42 @@
       <div class="contact-menu">
         <div class="contact-item">
           <h2 class="contact-title">Приєднуйтесь до<br> мережі пекарнь</h2>
-          <p class="accent-dark">Заповни форму, щоб ми звʼязались з тобою!</p>
+          <p class="accent-dark main">Заповни форму, щоб ми звʼязались з тобою!</p>
 
           <section>
-            <p>
-              <input type="text" id="name" value="Ім’я" />
-            </p>
-            <p>
-              <input type="tel" id="tel" value="Телефон" />
-            </p>
-            <p>
-              <input type="email" id="email" value="Електронна пошта" />
-            </p>
 
-            <p>
+            <div class="form-field first main">
+              <label class="form-label visually-hidden" for="user-name">Ім’я</label>
+              <input class="input" type="text" id="user-name" name="user-name" placeholder="Ім’я" />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+              <input class="input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
+              <input class="input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" />
+            </div>
+
+
+            <div class="button-forms">
               <button class="button" type="submit">
                 <span class="color-button">Замовити дзвінок</span>
               </button>
-            </p>
-
-            <p>
-              Натискаючи на кнопку я погоджуюсь з
+            </div>
+            <p class="form-header">
+              Натискаючи на кнопку я погоджуюсь з <br>
               <span class="text"><a href="#">політикою конфіденційності</a></span>
+            </p>
             </p>
           </section>
         </div>
 
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546631675!2d30.48865321265834!3d50.456669671474984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1707056866335!5m2!1suk!2sua"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          width="600" height="595px" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </div>

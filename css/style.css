@@ -189,6 +189,9 @@ header {
   color: var(--color-brand-dark);
   margin: 0;
 }
+.accent-dark.main {
+  margin-top: 16px;
+}
 .accent-dark.centered {
   text-align: center;
 }
@@ -529,6 +532,9 @@ header {
 }
 .form-field.first {
   margin-top: 72px;
+}
+.form-field.first.main {
+  margin-top: 42px;
 }
 .input {
   background-color: transparent;
