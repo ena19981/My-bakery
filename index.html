@@ -191,12 +191,14 @@
 
             <div class="form-field first main">
               <label class="form-label visually-hidden" for="user-name">Ім’я</label>
-              <input class="input" type="text" id="user-name" name="user-name" placeholder="Ім’я" />
+              <input class="input" type="text" id="user-name" name="user-name" placeholder="Ім’я" required />
             </div>
 
             <div class="form-field">
               <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-              <input class="input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+              <input class="input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" required
+                pattern="[0-9]{10}" title="Введите 10 цифр без пробелов и других символов">
+
             </div>
 
             <div class="form-field">
@@ -288,7 +290,7 @@
     <div class="modal">
       <button class="modal-btn-close" type="button"></button>
       <div class="modal-window">
-        <form name="contact-form" autocomplete="off" novalidate>
+        <form name="contact-form" autocomplete="off">
           <div>
             <h2 class="modal-titel">Замовити дзвінок</h2>
             <p class="accent-dark centered">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
@@ -296,12 +298,14 @@
 
           <div class="form-field first">
             <label class="form-label visually-hidden" for="user-name">Ім’я</label>
-            <input class="input" type="text" id="user-name" name="user-name" placeholder="Ім’я" />
+            <input class="input" type="text" id="user-name" name="user-name" placeholder="Ім’я" required />
           </div>
 
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-            <input class="input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+            <input class="input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" required
+              pattern="^\+[0-9]{12}" title="Введите 12 цифр без пробелов и других символов начиная с +380">
+
           </div>
 
           <div class="form-field">
@@ -320,11 +324,12 @@
           <p class="form-header">
             Натискаючи на кнопку я погоджуюсь з <br>
             <span class="text"><a href="#">політикою конфіденційності</a></span>
+            <span class="modal-icon"></span>
           </p>
         </form>
       </div>
 
-      <img class="modal-icon" src="./icon/modal-form.png" alt="">
+      <!-- <img class="modal-icon" src="./icon/modal-form.png" alt=""> -->
     </div>
   </div>
 

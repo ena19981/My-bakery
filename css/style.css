@@ -379,6 +379,7 @@ header {
 }
 .text {
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 .traditions-text span {
   text-transform: uppercase;
@@ -443,7 +444,7 @@ header {
   height: 330px;
   background-size: 100%;
   top: 114px;
-  right: 110px;
+  right: 0;
   content: '';
 }
 
@@ -574,9 +575,12 @@ header {
   line-height: 1.5;
 }
 .modal-icon {
+  background-image: url(../icon/modal-form.png);
+  position: absolute;
   width: 200px;
   height: 224px;
-  position: absolute;
   right: 0;
-  bottom: 10px;
+  left: 672px;
+  top: 630px;
+  bottom: 20px;
 }
