@@ -1,0 +1,17 @@
+.advantages-saction {
+    padding: 16px 0;
+    background: var(--color-brand-normal);
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.advantages-item {
+    color: var(--color-primery-light);
+    backdrop-filter: blur(2px);
+    font-size: 20px;
+    font-weight: 300;
+}

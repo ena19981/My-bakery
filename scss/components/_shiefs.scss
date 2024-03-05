@@ -1,0 +1,54 @@
+.shiefs-titel {
+    position: relative;
+    width: 538px;
+    max-width: 900px;
+    margin-bottom: 80px;
+}
+
+.shief-before::before,
+.shief-before::after {
+    display: block;
+    width: 352px;
+    border: 2px solid var(--color-brand-light);
+    content: '';
+}
+
+.shief-before::before {
+    position: absolute;
+    left: -360px;
+    bottom: 24px;
+}
+
+.shief-before::after {
+    position: absolute;
+    right: -360px;
+    bottom: 24px;
+}
+
+.shief-titel {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+
+.shief-text p {
+    margin-bottom: 24px;
+}
+
+.shief-text p:last-child {
+    margin-bottom: 0;
+}
+
+.shief-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.shief-imeg {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primery-light),
+        -16px 16px 0 2px var(--color-secondary-dark);
+}
