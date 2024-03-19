@@ -1,0 +1,49 @@
+.footer {
+    background-image: url('../icon/footer-fon.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: var(--color-primery-dark);
+    padding: 32px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-titel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-item {
+    margin-bottom: 16px;
+}
+
+.footer-contact {
+    margin-bottom: 12px;
+}
+
+.footer::before {
+    position: absolute;
+    background-image: url('../icon/decor-bread-big.png');
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 342px;
+    background-size: 100%;
+    left: -44px;
+    top: 150px;
+    content: '';
+}
+
+.footer::after {
+    position: absolute;
+    background-image: url('../icon/decor-bread-smoll.png');
+    background-repeat: no-repeat;
+    width: 305px;
+    height: 330px;
+    background-size: 100%;
+    top: 114px;
+    right: 0;
+    content: '';
+}

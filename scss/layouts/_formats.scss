@@ -1,0 +1,41 @@
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 444px;
+    padding: 24px;
+    background-image: linear-gradient(180deg,
+            rgba(49, 38, 26, 0) 55.21%,
+            rgba(49, 38, 26, 0.71) 72.92%,
+            var(--color-primery-dark) 100%);
+    border: 1px solid lightgray;
+    border-radius: 16px;
+
+    transition: transform 0.3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.format-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}

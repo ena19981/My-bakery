@@ -1,0 +1,31 @@
+.hero-saction {
+        padding: 124px 0;
+
+    @media screen and (min-width: $bp-desktop) {
+            padding: 272px 0;
+        }
+}
+
+.hero-titel {
+    margin-bottom: 0;
+    color: var(--color-primery-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+    margin: 0 auto;
+
+    @media screen and (max-width: $bp-desktop) {
+        font-size: 67px;
+        font-weight: 66px;
+        line-height: 1;
+    margin-bottom: 48px;    }
+
+}
+
+.hero-saction-button{
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+}

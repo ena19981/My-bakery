@@ -10,7 +10,7 @@
 
 @import "./components/links";
 
-@import "./components/header";
+@import "./layouts/header";
 
 .container {
     width: 100%;
@@ -21,104 +21,29 @@
 
 .section {
     padding: 48px 0;
+    
+    @media screen and (max-width: $bp-desktop) {
+        padding: 24px 0
+        }
 }
 
-@import "./components/traditions";
+@import "./layouts/traditions";
 
-.hero-saction {
-    padding: 272px 0;
-}
-
-.hero-titel {
-    margin-bottom: 0;
-    color: var(--color-primery-light);
-    text-align: center;
-    font-size: 128px;
-    font-weight: 900;
-    margin: 0 auto;
-}
+@import "./layouts/hero-sections";
 
 @import "./components/accent";
 
-@import "./components/adventages";
+@import "./layouts/adventages";
 
-@import "./components/section-title";
+@import "./layouts/section-title";
 
-@import "./components/shiefs";
+@import "./layouts/shiefs-sections";
 
-.carousel-list {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
+@import "./layouts/carousel";
 
-.carousel-buttom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid var(--color-primery-dark);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+@import "./layouts/_form-titel";
 
-.carousel-buttom:hover {
-    background-color: var(--color-primery-dark);
-}
-
-.carousel-icon {
-    fill: var(--color-primery-dark);
-    transition: fill 0.3s;
-}
-
-.carousel-icon.transform {
-    transform: rotate(180deg);
-}
-
-.carousel-buttom:hover .carousel-icon {
-    fill: var(--color-primery-light);
-}
-
-.forms-titel {
-    margin-bottom: 80px;
-}
-
-.form-titel {
-    font-size: 24px;
-    font-weight: 600;
-        color: var(--color-primery-light);
-}
-
-.form-text {
-    font-size: 14px;
-    font-weight: 300;
-            color: var(--color-primery-light);
-
-}
-
-.contact-section {
-    padding-bottom: 96px;
-}
-
-.contact-title {
-    margin-bottom: 16px;
-    color: var(--color-primery-dark);
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 1.3;
-    margin: 0 auto;
-}
-
-.contact-menu {
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-}
+@import "./layouts/contatct";
 
 .map {
     flex-shrink: 0;
@@ -126,51 +51,8 @@
     border: none;
 }
 
-.contact-item {
-    text-align: left;
-}
+@import "./layouts/formats";
 
-.formats-list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.formats-item {
-    flex-basis: calc((100% - 40px) / 3);
-}
-
-.format-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-    height: 444px;
-    padding: 24px;
-    background-image: linear-gradient(180deg,
-            rgba(49, 38, 26, 0) 55.21%,
-            rgba(49, 38, 26, 0.71) 72.92%,
-            var(--color-primery-dark) 100%);
-    border: 1px solid lightgray;
-    border-radius: 16px;
-   
-    transition: transform 0.3s;
-}
-
-.format-card:hover {
-    transform: scale(1.05);
-        transition: transform 0.3s;
-}
-
-.format-image {
- position: absolute;
- z-index: -1;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- 
-}
 
 /* footer text */
 .address-link {
@@ -195,36 +77,9 @@
     text-underline-offset: 2px;
 }
 
-.traditions-text span {
-    text-transform: uppercase;
-    font-weight: 600;
-}
 
-.footer {
-    background-image: url('../icon/footer-fon.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-color: var(--color-primery-dark);
-    padding: 32px 0;
-    position: relative;
-    overflow: hidden;
-}
 
-.footer-titel {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.footer-item {
-    margin-bottom: 16px;
-}
-
-.footer-contact {
-    margin-bottom: 12px;
-}
+@import "./layouts/footer";
 
 .address-icon {
     fill: var(--color-primery-light);
@@ -238,8 +93,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    /* margin: 0;
-  padding: 0; */
 }
 
 .flex-logo {
@@ -247,29 +100,8 @@
     margin-left: 0px;
 }
 
-.footer::before {
-    position: absolute;
-    background-image: url('../icon/decor-bread-big.png');
-    background-repeat: no-repeat;
-    width: 180px;
-    height: 342px;
-    background-size: 100%;
-    left: -44px;
-    top: 150px;
-    content: '';
-}
 
-.footer::after {
-    position: absolute;
-    background-image: url('../icon/decor-bread-smoll.png');
-    background-repeat: no-repeat;
-    width: 305px;
-    height: 330px;
-    background-size: 100%;
-    top: 114px;
-    right: 0;
-    content: '';
-}
+@import "./layouts/mobile-menu";
 
 /* MODAL */
 .backdrop {

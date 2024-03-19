@@ -12,7 +12,7 @@
       rel="stylesheet"
     /> -->
   <!-- style -->
-  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="./scss/main.min.css" />
   <title>Моя Пекарня</title>
 </head>
 
@@ -34,12 +34,30 @@
             </ul>
 
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="header-button button modal-btn-open" type="button">
             <a class="color-button" href="#">Замовити дзвінок</a>
           </button>
+
+          <!-- Burger mobile buttom -->
+          <button class="header-burger menu-btn-open" type="button">
+            <svg width="24px" height="24px">
+              <use href="./icon/sprites.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <!-- Mobil menu -->
+          <div class="mobile-menu">
+            <div>
+              <a href="./index.html"><img src="./icon/logo.svg" alt="logo" /></a>
+              <button class="menu-btn-close" type="button">
+                close
+              </button>
+            </div>
+
+          </div>
+
         </div>
       </div>
-      <!-- buttom -->
     </header>
 
     <main>
@@ -47,8 +65,12 @@
         <div class="container">
           <h1 class="hero-titel"><span class="accent">Сучасна</span> Пекарня</h1>
         </div>
+        <button class="hero-saction-button button modal-btn-open" type="button">
+          <a class="color-button" href="#">Замовити дзвінок</a>
+        </button>
       </section>
   </section>
+
 
   <section class="advantages-saction">
     <div class="container">
@@ -77,7 +99,7 @@
             пекарень стильний дизайн <br>та висока якість обслуговування!
           </p>
         </div>
-        <img src="./icon/bacer-man.jpg" alt="bacer-man" />
+        <img class="traditions-image" src="./icon/bacer-man.jpg" alt="bacer-man" />
       </div>
     </div>
   </section>
@@ -85,7 +107,7 @@
   <section class="section" id="shief-section">
     <div class="container">
       <h2 class="shiefs-titel section-title centered ">
-        Наші найкращі<span class="shief-before accent-dark">шеф - кухарі</span>
+        Наші найкращі <br> <span class="shief-before accent-dark">шеф - кухарі</span>
       </h2>
       <div>
         <ul class="shief-menu">
@@ -124,7 +146,7 @@
     </div>
   </section>
 
-  <section class="section" id="form-section">
+  <!-- <section class="section" id="form-section">
     <div class="container">
       <h2 class="forms-titel section-title centered">Формати</h2>
       <div class="carousel-list">
@@ -181,9 +203,9 @@
         </button>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class=" contact-section section" id="contact-section">
+  <!-- <section class=" contact-section section" id="contact-section">
     <div class="container">
       <div class="contact-menu">
         <div class="contact-item">
@@ -230,10 +252,12 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
+
   </main>
 
-  <footer class="footer">
+
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer-titel">
         <a href="">
@@ -248,13 +272,14 @@
         <address>
           <ul>
             <li class="footer-contact">
-              <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+              <a class="address-link link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
             </li>
             <li class="footer-contact">
-              <a class="address-link" href="mailto: shopbakery@gmail.com">shopbakery@gmail.com</a>
+              <a class="address-link link" href="mailto: shopbakery@gmail.com">shopbakery@gmail.com</a>
             </li>
             <li class="footer-contact">
-              <a class="address-link" href="https://maps.app.goo.gl/vSnS6P2zAtT2LXwz8" target="_blank">Україна, м. Київ,
+              <a class="address-link link" href="https://maps.app.goo.gl/vSnS6P2zAtT2LXwz8" target="_blank">Україна, м.
+                Київ,
                 <br>
                 вул. Січових Стрільців 54
               </a>
@@ -262,14 +287,14 @@
             <div class="address-logo">
               <li class="flex-logo">
                 <a href="#">
-                  <svg class="address-icon" width="32px" height="32px">
+                  <svg class="address-icon " width="32px" height="32px">
                     <use href="./icon/sprites.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="flex-logo">
                 <a href="#">
-                  <svg class="address-icon" width="32px" height="32px">
+                  <svg class="address-icon " width="32px" height="32px">
                     <use href="./icon/sprites.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -283,7 +308,8 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
+
 
 
 
@@ -337,6 +363,9 @@
   </div>
 
 
+
+
+  <script src="./js/mobile-menu.js"></script>
 
   <script src="./js/modal.js"></script>
 </body>
