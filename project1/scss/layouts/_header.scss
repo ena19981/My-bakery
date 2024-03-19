@@ -1,0 +1,42 @@
+header {
+    padding-top: 32px;
+    @media screen and (max-width: $bp-desktop) {
+    padding-top: 16px;        }
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-desktop) {
+        display: none;
+    }
+}
+
+.header-button{
+    @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
+}
+
+.header-burger{
+    display: none;
+
+    @media screen and (max-width: $bp-desktop) {
+            display: block;
+        }
+}

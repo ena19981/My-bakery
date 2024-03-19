@@ -1,0 +1,17 @@
+.accent {
+    color: var(--color-brand-normal);
+    margin: 0;
+}
+
+.accent-dark {
+    color: var(--color-brand-dark);
+    margin: 0;
+}
+
+.accent-dark.main {
+    margin-top: 16px;
+}
+
+.accent-dark.centered {
+    text-align: center;
+}
