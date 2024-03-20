@@ -1,15 +1,6 @@
-.formats-list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.formats-item {
-    flex-basis: calc((100% - 40px) / 3);
-}
 
 .format-card {
-    display: flex;
+display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
@@ -21,13 +12,7 @@
             var(--color-primery-dark) 100%);
     border: 1px solid lightgray;
     border-radius: 16px;
-
-    transition: transform 0.3s;
-}
-
-.format-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
+  
 }
 
 .format-image {

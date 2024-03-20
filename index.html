@@ -13,6 +13,7 @@
     /> -->
   <!-- style -->
   <link rel="stylesheet" href="./scss/main.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Моя Пекарня</title>
 </head>
 
@@ -112,9 +113,9 @@
       <div>
         <ul class="shief-menu">
           <li>
-            <article class="shief-menu">
+            <article class="shief-item">
               <img class="shief-imeg" src="./icon/nastya.jpg" alt="shef" />
-              <div>
+              <div class="shief-info">
                 <h3 class="shief-titel">Настя</h3>
                 <div class="shief-text">
                   <p>Привіт, я Настя!</p>
@@ -125,9 +126,9 @@
             </article>
           </li>
           <li>
-            <article class="shief-menu">
+            <article class="shief-item">
               <img class="shief-imeg" src="./icon/vlad.jpg" alt="shef" />
-              <div>
+              <div class="shief-info">
                 <h3 class="shief-titel">Влад</h3>
                 <div class="shief-text">
                   <p>Привіт, я Влад!</p>
@@ -146,64 +147,73 @@
     </div>
   </section>
 
-  <!-- <section class="section" id="form-section">
-    <div class="container">
+  <section class="section" id="form-section">
+    <div class="container ">
       <h2 class="forms-titel section-title centered">Формати</h2>
-      <div class="carousel-list">
-        <button class="carousel-buttom" type="button">
+      <div class="slider">
+        <button class="carousel-buttom prev" type="button">
           <svg class="carousel-icon" width="16px" height="16px">
             <use href="./icon/sprites.svg#icon-Arrow"></use>
           </svg>
         </button>
-        <ul class="formats-list">
-          <li class="formats-item">
-            <article class="format-card">
-              <img class="format-image" src="./icon/format1.jpg" alt="Walrus format">
-              <h3 class="form-titel" lang="en">Walrus</h3>
-              <div class="form-text">
-                <p>Площа: до 120 м2</p>
-                <p>Меню: розширене меню</p>
-                <p>
-                  Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                  офіціанти-різнороби
-                </p>
-                <p>Посадкові місця: є</p>
-              </div>
-            </article>
-          </li>
-          <li class="formats-item">
-            <article class="format-card">
-              <img class="format-image" src="./icon/format2.jpg" alt="Horseshoe format">
-              <h3 class="form-titel" lang="en">Horseshoe</h3>
-              <div class="form-text">
-                <p>Площа: до 25 м2</p>
-                <p>Меню: найпопулярніші позиції меню</p>
-                <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                <p>Посадкові місця: відсутні</p>
-              </div>
-            </article>
-          </li>
-          <li class="formats-item">
-            <article class="format-card">
-              <img class="format-image" src="./icon/format3.jpg" alt="Handlebar format">
-              <h3 class="form-titel" lang="en">Handlebar</h3>
-              <div class="form-text">
-                <p>Площа: до 15 м2</p>
-                <p>Меню: найпопулярніші позиції меню</p>
-                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                <p>Посадкові місця: відсутні</p>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <button class="carousel-buttom" type="button">
+
+        <div class="carousel-list swiper-container">
+          <ul class="swiper-list swiper-wrapper">
+            <li class="swiper-slide">
+              <article class="format-card">
+
+                <img class="format-image" src="./icon/format1.jpg" alt="Walrus format">
+                <h3 class="form-titel" lang="en">Walrus</h3>
+                <div class="form-text">
+                  <p>Площа: до 120 м2</p>
+                  <p>Меню: розширене меню</p>
+                  <p>
+                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                    офіціанти-різнороби
+                  </p>
+                  <p>Посадкові місця: є</p>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="format-card">
+                <img class="format-image" src="./icon/format2.jpg" alt="Horseshoe format">
+                <h3 class="form-titel" lang="en">Horseshoe</h3>
+                <div class="form-text">
+                  <p>Площа: до 25 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="format-card">
+                <img class="format-image" src="./icon/format3.jpg" alt="Handlebar format">
+                <h3 class="form-titel" lang="en">Handlebar</h3>
+                <div class="form-text">
+                  <p>Площа: до 15 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                  <p>Посадкові місця
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="pagination">
+            <span class="pagination-button"></span>
+            <span class="pagination-button"></span>
+            <span class="pagination-button"></span>
+            <span class="pagination-button"></span>
+          </div>
+        </div>
+
+        <button class="carousel-buttom next" type="button">
           <svg class="carousel-icon transform" width="16px" height="16px">
             <use href="./icon/sprites.svg#icon-Arrow"></use>
           </svg>
         </button>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- <section class=" contact-section section" id="contact-section">
     <div class="container">
@@ -368,6 +378,9 @@
   <script src="./js/mobile-menu.js"></script>
 
   <script src="./js/modal.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/formats-slider.js"></script>
 </body>
 
 </html>

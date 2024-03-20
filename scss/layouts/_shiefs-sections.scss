@@ -35,18 +35,26 @@
 }
 
 .shief-titel {
-    font-size: 40px;
+font-size: 24px;
+    /* Уменьшаем размер заголовка для лучшей визуальной структуры */
     font-weight: 600;
-    margin-bottom: 16px;
-    margin-top: 0px;
+    margin-top: 0;
+}
+
+.shief-text {
+    flex-grow: 1;
 }
 
 .shief-text p {
-    margin-bottom: 24px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-bottom: 8px;
+    /* Уменьшаем отступ между абзацами */
 }
 
 .shief-text p:last-child {
     margin-bottom: 0;
+    /* Убираем отступ у последнего абзаца */
 }
 
 .shief-menu {
@@ -54,17 +62,44 @@
     align-self: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 
-    @media screen and (max-width: $bp-desktop) {
-        
-        
-        }
+    @media screen and (min-width: $bp-tablet) {
+        gap: 40px 30px;
+    }
 }
+
 
 .shief-imeg {
-    display: block;
-    border-radius: 4px 4px 4px 200px;
-    box-shadow: -16px 16px 0 0 var(--color-primery-light),
-        -16px 16px 0 2px var(--color-secondary-dark);
+        width: 140px;
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--color-primery-light),
+            -16px 16px 0 2px var(--color-secondary-dark);
+    
+
+    @media screen and (min-width: $bp-desktop) {
+        width: 240px;
+    }
 }
+
+.shief-item {
+        display: flex;
+        align-items: flex-start;
+        /* Выравниваем элементы по верхнему краю */
+        gap: 20px;
+        /* Расстояние между изображением и информацией */
+        margin-bottom: 20px;
+        /* Добавляем немного пространства между элементами списка */
+   
+
+@media screen and (min-width: $bp-tablet) {
+    .shief-item {
+        flex: 1 1 calc(50% - 20px);
+        /* Устанавливаем 50% ширины на планшетах и выше */
+    }
+}
+ }
+ .shief-info {
+     flex-grow: 1;
+     /* Занимаем все доступное пространство рядом с изображением */
+ }

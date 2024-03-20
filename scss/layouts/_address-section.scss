@@ -1,0 +1,29 @@
+.address-link {
+    color: var(--color-primery-light);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.address-link:hover {
+    color: var(--color-brand-normal);
+}
+
+.address-copyright {
+    color: #a18268;
+    font-size: 14px;
+    font-weight: 400;
+}
+.address-icon {
+    fill: var(--color-primery-light);
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-normal);
+}
+
+.address-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

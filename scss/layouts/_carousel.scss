@@ -1,7 +1,12 @@
-.carousel-list {
+
+.slider{
     display: flex;
     align-items: center;
     gap: 32px;
+}
+
+.carousel-list{
+overflow: hidden;
 }
 
 .carousel-buttom {
@@ -34,4 +39,8 @@
 
 .carousel-buttom:hover .carousel-icon {
     fill: var(--color-primery-light);
+}
+
+.swiper-list{
+    margin-bottom: 32px;
 }

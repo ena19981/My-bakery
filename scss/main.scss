@@ -43,6 +43,8 @@
 
 @import "./layouts/_form-titel";
 
+@import "./components/pagination";
+
 @import "./layouts/contatct";
 
 .map {
@@ -55,22 +57,7 @@
 
 
 /* footer text */
-.address-link {
-    color: var(--color-primery-light);
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 12px;
-}
-
-.address-link:hover {
-    color: var(--color-brand-normal);
-}
-
-.address-copyright {
-    color: #a18268;
-    font-size: 14px;
-    font-weight: 400;
-}
+@import "./layouts/address-section.scss";
 
 .text {
     text-decoration: underline;
@@ -81,19 +68,7 @@
 
 @import "./layouts/footer";
 
-.address-icon {
-    fill: var(--color-primery-light);
-}
 
-.address-icon:hover {
-    fill: var(--color-brand-normal);
-}
-
-.address-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 
 .flex-logo {
     margin: 4px 22px;
