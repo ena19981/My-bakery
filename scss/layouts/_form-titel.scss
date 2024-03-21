@@ -1,5 +1,7 @@
 .forms-titel {
     margin-bottom: 80px;
+    @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 24px;        }
 }
 
 .form-titel {

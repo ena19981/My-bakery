@@ -36,7 +36,7 @@
 
           </nav>
           <button class="header-button button modal-btn-open" type="button">
-            <a class="color-button" href="#">Замовити дзвінок</a>
+            <span class="color-button">Замовити дзвінок</span>
           </button>
 
           <!-- Burger mobile buttom -->
@@ -66,8 +66,12 @@
         <div class="container">
           <h1 class="hero-titel"><span class="accent">Сучасна</span> Пекарня</h1>
         </div>
-        <button class="hero-saction-button button modal-btn-open" type="button">
-          <a class="color-button" href="#">Замовити дзвінок</a>
+        <!-- <button class="hero-saction-button button " type="button">
+          <a class="color-button" href="#contact-section">Замовити дзвінок</a>
+        </button> -->
+        <button class="hero-saction-button button" type="button" onclick="window.location.href='#contact-section'"><span
+            class="color-button">Замовити дзвінок</span>
+
         </button>
       </section>
   </section>
@@ -215,62 +219,61 @@
     </div>
   </section>
 
-  <!-- <section class=" contact-section section" id="contact-section">
-    <div class="container">
+  <section class=" contact-section section" id="contact-section">
+    <div class="container zero">
       <div class="contact-menu">
         <div class="contact-item">
           <h2 class="contact-title">Приєднуйтесь до<br> мережі пекарнь</h2>
           <p class="accent-dark main">Заповни форму, щоб ми звʼязались з тобою!</p>
 
           <section>
-
             <div class="form-field first">
-              <label class="form-label visually-hidden" for="user-name">Ім’я</label>
-              <input class="input" type="text" id="user-name" name="user-name" placeholder="Ім’я" required />
+              <label class="form-label visually-hidden" for="user-name-main">Ім’я</label>
+              <input class="input" type="text" id="user-name-main" name="user-name-main" placeholder="Ім’я" required
+                form="main-form" />
             </div>
 
             <div class="form-field">
-              <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-              <input class="input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" required
-                pattern="^\+[0-9]{12}" title="Введите 12 цифр без пробелов и других символов начиная с +380">
-
+              <label class="form-label visually-hidden" for="user-tel-main">Телефон</label>
+              <input class="input" type="tel" id="user-tel-main" name="user-tel-main" placeholder="Телефон" required
+                form="main-form" pattern="^\+[0-9]{12}"
+                title="Введите 12 цифр без пробелов и других символов начиная с +380" />
             </div>
 
             <div class="form-field">
-              <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-              <input class="input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" />
+              <label class="form-label visually-hidden" for="user-email-main">Електронна пошта</label>
+              <input class="input" type="email" id="user-email-main" name="user-email-main"
+                placeholder="Електронна пошта" required form="main-form" />
             </div>
-
 
             <div class="button-forms">
-              <button class="button" type="submit">
+              <button class="button" type="submit" form="main-form">
                 <span class="color-button">Замовити дзвінок</span>
               </button>
             </div>
+
             <p class="form-header">
               Натискаючи на кнопку я погоджуюсь з <br>
               <span class="text"><a href="#">політикою конфіденційності</a></span>
-            </p>
             </p>
           </section>
         </div>
 
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546631675!2d30.48865321265834!3d50.456669671474984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1707056866335!5m2!1suk!2sua"
-          width="600" height="595px" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </div>
     </div>
-  </section> -->
+  </section>
 
   </main>
 
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-titel">
-        <a href="">
+        <a class="footer-list" href="">
           <img src="./icon/logo.svg" alt="logo" />
         </a>
         <ul>
@@ -318,7 +321,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
 
 
@@ -376,9 +379,7 @@
 
 
   <script src="./js/mobile-menu.js"></script>
-
   <script src="./js/modal.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/formats-slider.js"></script>
 </body>

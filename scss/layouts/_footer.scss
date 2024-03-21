@@ -14,10 +14,16 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
+    @media screen and (max-width: $bp-tablet) {
+           flex-direction: column;
+        }
 }
 
 .footer-item {
     margin-bottom: 16px;
+    @media screen and (max-width: $bp-tablet) {
+            margin: 0 auto;
+        }
 }
 
 .footer-contact {
@@ -34,6 +40,10 @@
     left: -44px;
     top: 150px;
     content: '';
+    @media screen and (max-width: $bp-tablet) {
+        left: -54px;
+        transform: rotate(16deg);
+        }
 }
 
 .footer::after {
@@ -46,4 +56,14 @@
     top: 114px;
     right: 0;
     content: '';
+    @media screen and (max-width: $bp-tablet) {
+        top: 400px;
+        right: -100px;
+        }
+}
+
+.footer-list{
+        @media screen and (max-width: $bp-tablet) {
+                margin: 0 auto;
+            }
 }

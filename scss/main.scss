@@ -17,6 +17,13 @@
     max-width: 1488px;
     margin: 0 auto;
     padding: 0 24px;
+    
+}
+
+.container.zero{
+    @media screen and (max-width: $bp-desktop) {
+        padding: 0;
+    }
 }
 
 .section {
@@ -48,9 +55,21 @@
 @import "./layouts/contatct";
 
 .map {
+    max-width: 600px ;
+    height: 595px;
+    width: 100%;
+   
+
     flex-shrink: 0;
     border-radius: 16px;
     border: none;
+
+    @media screen and (max-width: $bp-desktop) {
+            height: 176px;
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+        }
 }
 
 @import "./layouts/formats";
@@ -155,6 +174,7 @@
 
 .form-field {
     margin-bottom: 32px;
+        
 }
 
 .form-label {
@@ -163,6 +183,9 @@
 
 .form-field.first {
     margin-top: 72px;
+    @media screen and (max-width: $bp-desktop) {
+            margin-top: 24px;
+        }
 }
 
 .form-field.first.main {
